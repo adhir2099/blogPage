@@ -1,5 +1,3 @@
-![Responsive](https://img.shields.io/badge/Responsive-Yes-ff69b4)
-
 <h1 align="center"> 👋 Blog page</h1>
 
 # Blog page
@@ -7,7 +5,16 @@ A responsive blog page with pure CSS and vanilla JS, no bootstrap nor tailwind n
 
 ## Demo URL
 <p align="left">
-  oops...not yet
+  <a href="https://3moondev.com/demos/blog/">
+    <b>Visit demo here</b>
+  </a>
+</p>
+
+## Frontend
+<p align="left">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=javascript,html,css" />
+  </a>
 </p>
 
 ## Custom css
@@ -24,9 +31,6 @@ A responsive blog page with pure CSS and vanilla JS, no bootstrap nor tailwind n
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin your-branch`
 5. Submit a PR
-
-## Maintenance
-![Maintenance](https://img.shields.io/badge/Maintenance-Yes-brightgreen)
 
 <h3 align="left">Get in touch with me:</h3>
 <p align="left">
