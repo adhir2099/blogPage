@@ -4,18 +4,26 @@
     <title>Blog page</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="https://github.com/adhir2099" />
+    <meta name="description" content="Pure Blog page - no libraries needed" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
         <div class="container">
+            
+            <div class="logo">
+                <img class="" src="https://www.latercera.com/resizer/0m3JT6JAmot5lzEHQ9eF7dXQO5c=/900x600/filters:focal(469x292:479x282)/cloudfront-us-east-1.images.arcpublishing.com/copesa/6O3E6FX56FCYFGW5NZFOKYGNY4.jpg" alt="Blog Logo 50x50">
+                <h1>Blog Page</h1>
+            </div>
+    
             <button class="menu-toggle" onclick="toggleMenu()">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </button>
-            <h1>Blog page</h1>
+    
             <nav class="nav-menu">
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -30,25 +38,32 @@
 
     <main>
 
-        <div class="container">
-            <!-- Carousel -->
+        <section class="container">
             <div class="carousel">
-                <div class="carousel-slide">
-                    <img src="https://www.latercera.com/resizer/0m3JT6JAmot5lzEHQ9eF7dXQO5c=/900x600/filters:focal(469x292:479x282)/cloudfront-us-east-1.images.arcpublishing.com/copesa/6O3E6FX56FCYFGW5NZFOKYGNY4.jpg" alt="Slide 1">
+                <div class="carousel-title">My Awesome Carousel</div>
+                <div class="carousel-slides">
+                    <div class="carousel-slide active">
+                        <img src="https://www.latercera.com/resizer/0m3JT6JAmot5lzEHQ9eF7dXQO5c=/900x600/filters:focal(469x292:479x282)/cloudfront-us-east-1.images.arcpublishing.com/copesa/6O3E6FX56FCYFGW5NZFOKYGNY4.jpg" alt="Slide 1">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://www.latercera.com/resizer/0m3JT6JAmot5lzEHQ9eF7dXQO5c=/900x600/filters:focal(469x292:479x282)/cloudfront-us-east-1.images.arcpublishing.com/copesa/6O3E6FX56FCYFGW5NZFOKYGNY4.jpg" alt="Slide 2">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://img2-levelup.buscafs.com/798495/798495.jpg" alt="Slide 3">
+                    </div>
                 </div>
-                <div class="carousel-slide">
-                    <img src="https://www.latercera.com/resizer/0m3JT6JAmot5lzEHQ9eF7dXQO5c=/900x600/filters:focal(469x292:479x282)/cloudfront-us-east-1.images.arcpublishing.com/copesa/6O3E6FX56FCYFGW5NZFOKYGNY4.jpg" alt="Slide 2">
-                </div>
-                <div class="carousel-slide">
-                    <img src="https://img2-levelup.buscafs.com/798495/798495.jpg" alt="Slide 3">
+                <div class="carousel-indicators">
+                    <span class="indicator active" data-slide-to="0"></span>
+                    <span class="indicator" data-slide-to="1"></span>
+                    <span class="indicator" data-slide-to="2"></span>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="container-content">
+        <section class="container-content">
             <div class="content-column">
                <article class="article-preview">
-                    <img src="https://www.latercera.com/resizer/0m3JT6JAmot5lzEHQ9eF7dXQO5c=/900x600/filters:focal(469x292:479x282)/cloudfront-us-east-1.images.arcpublishing.com/copesa/6O3E6FX56FCYFGW5NZFOKYGNY4.jpg" alt="Article Thumbnail">
+                    <img src="https://img2-levelup.buscafs.com/798495/798495.jpg" alt="Article Thumbnail">
                     <div class="article-content">
                         <h2>Latest Article Title</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero sit amet lectus sodales, vitae condimentum justo sollicitudin.</p>
@@ -64,7 +79,7 @@
                     </div>
                 </article>
                 <article class="article-preview">
-                    <img src="https://www.latercera.com/resizer/0m3JT6JAmot5lzEHQ9eF7dXQO5c=/900x600/filters:focal(469x292:479x282)/cloudfront-us-east-1.images.arcpublishing.com/copesa/6O3E6FX56FCYFGW5NZFOKYGNY4.jpg" alt="Article Thumbnail">
+                    <img src="https://scontent.fmex27-1.fna.fbcdn.net/v/t39.30808-6/466590252_1767922303972458_8684307672833367348_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=Quzfik6pzt8Q7kNvgGdXoaR&_nc_oc=Adlxfvl4anKBUY6DJ9yoNIjEClj4H9F5ab6d8Z6dIDyqTT6x0D_jir1hYuXVeA8He8Y&_nc_zt=23&_nc_ht=scontent.fmex27-1.fna&_nc_gid=3l9aR74tlO0TzwuOLdP2Kw&oh=00_AYFK4kpVAWkjg6rEWawhK-4LC2APPqVM8sfXzvGSMHH7BA&oe=67E2A2A2" alt="Article Thumbnail">
                     <div class="article-content">
                         <h2>Latest Article Title</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero sit amet lectus sodales, vitae condimentum justo sollicitudin.</p>
@@ -92,9 +107,9 @@
                     </li>
                 </ul>
             </div>
-        </div>
-
-        <div class="container">
+        </section>
+        
+        <section class="container-nl">
             <div class="contact-form">
                 <h2>Sign up to Newsletter</h2>
                 <form action="#" method="post">
@@ -105,7 +120,22 @@
                     <button type="submit">Send</button>
                 </form>
             </div>
-        </div>
+        </section>
+
+        <section class="about-author">
+            <h2>About Me</h2>
+            <div class="author-info">
+                <img src="https://www.latercera.com/resizer/0m3JT6JAmot5lzEHQ9eF7dXQO5c=/900x600/filters:focal(469x292:479x282)/cloudfront-us-east-1.images.arcpublishing.com/copesa/6O3E6FX56FCYFGW5NZFOKYGNY4.jpg" alt="Author Photo 150x150">
+                <p>Hi, I'm [Your Name], a passionate blogger sharing insights on [your niche]. Follow me for more!</p>
+                <div class="social-links">
+                    <a href="#"><img src="assets/svg/discord-icon.svg" alt=""></a>
+                    <a href="#"><img src="assets/svg/instagram-icon.svg" alt=""></a>
+                    <a href="#"><img src="assets/svg/joinmastodon-icon.svg" alt=""></a>
+                    <a href="#"><img src="assets/svg/x-ar21.svg" alt=""></a>
+                    <a href="#"><img src="assets/svg/youtube-icon.svg" alt=""></a>
+                </div>
+            </div>
+        </section>
 
     </main>
 
@@ -114,7 +144,6 @@
             <p>&copy; 2024 Blog page. All rights reserved.</p>
         </div>
     </footer>
-
 
     <script src="custom.js"></script>
 </body>

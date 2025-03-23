@@ -1,4 +1,4 @@
-<h1 align="center"> 👋 Blog page</h1>
+<h1 align="center">  Blog page 👋</h1>
 
 # Blog page
 A responsive blog page with pure CSS and vanilla JS, no bootstrap nor tailwind needed.
@@ -18,8 +18,8 @@ A responsive blog page with pure CSS and vanilla JS, no bootstrap nor tailwind n
 </p>
 
 ## Custom css
-<p>It has a <i>style.css</i> file where you can add custom css to it for improvement and expansion. Feel free to explore additional features and functionalities to enhance your landing further</p>
-<p>Grid page.</p>
+<p>It has a <i>style.css</i> file where you can add custom css to it for improvement and expansion.</p>
+<p>Feel free to explore additional features and functionalities to enhance your landing further</p>
 
 ## Vanilla JS
 <p>It has a <i>custom.js</i> file where you can add custom js to your project.</p>
