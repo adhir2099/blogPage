@@ -5,7 +5,7 @@ A responsive blog page with pure CSS and vanilla JS, no bootstrap nor tailwind n
 
 ## Demo URL
 <p align="left">
-  <a href="https://3moondev.com/demos/blog/">
+  <a href="https://adhir2099.github.io/blogPage/">
     <b>Visit demo here</b>
   </a>
 </p>
