@@ -46,12 +46,6 @@ main {
     padding: 20px;
 }
 
-@media (min-width: 768px) {
-    .container-content {
-        grid-template-columns: 2fr 1fr;
-    }
-}
-
 .content-column {
     padding: 15px;
     background-color: #f0f0f0;
@@ -141,38 +135,6 @@ header {
     border-radius: 5px;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
-
-    .nav-menu {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: #333;
-        flex-direction: column;
-        align-items: center;
-        padding: 10px 0;
-    }
-
-    .nav-menu.active {
-        display: flex;
-    }
-
-    .nav-menu ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .nav-menu ul li a {
-        padding: 10px;
-    }
-}
-
 header.sticky {
     background-color: rgba(51, 51, 51, 0.9);
     padding: 5px 0;
@@ -183,8 +145,23 @@ header.sticky {
     position: relative;
     overflow: hidden;
     width: 100%;
+    height: clamp(280px, 50vh, 500px);
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-slides,
+.carousel-slide {
+    height: 100%;
+}
+
+.carousel-slide {
+    min-width: 100%;
+}
+
+.carousel-slide img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .carousel-title {
@@ -203,19 +180,6 @@ header.sticky {
 .carousel-slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
-}
-
-.carousel-slide {
-    min-width: 100%;
-    box-sizing: border-box;
-    position: relative;
-}
-
-.carousel-slide img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 15px;
 }
 
 .carousel-indicators {
@@ -241,20 +205,7 @@ header.sticky {
     background-color: rgb(97, 87, 87);
 }
 
-@media (max-width: 768px) {
-    .carousel-title {
-        font-size: 18px;
-        top: 10px;
-        left: 10px;
-    }
-
-    .carousel-indicators {
-        bottom: 10px;
-    }
-}
-
 /* Cards */
-
 .post-card:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease;
@@ -315,21 +266,6 @@ article p {
 
 .article-content {
     flex: 1;
-}
-
-@media (max-width: 768px) {
-    .article-preview {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .article-preview img {
-        margin-bottom: 10px;
-    }
-
-    main {
-        margin-bottom: 10%;
-    }
 }
 
 .post-list {
@@ -476,4 +412,65 @@ button[type="submit"]:hover {
 
 #main-footer.show {
     transform: translateY(0);
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+    .article-preview {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .article-preview img {
+        margin-bottom: 10px;
+    }
+
+    main {
+        margin-bottom: 10%;
+    }
+
+    .carousel-title {
+        font-size: 18px;
+        top: 10px;
+        left: 10px;
+    }
+
+    .carousel-indicators {
+        bottom: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-menu ul li a {
+        padding: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container-content {
+        grid-template-columns: 2fr 1fr;
+    }
 }

@@ -1,63 +1,63 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", () => {
+    // ===== CAROUSEL =====
     const carousel = document.querySelector(".carousel");
-    const slidesContainer = carousel.querySelector(".carousel-slides");
-    const slides = carousel.querySelectorAll(".carousel-slide");
-    const indicators = carousel.querySelectorAll(".indicator");
+    if (carousel) {
+        const slidesContainer = carousel.querySelector(".carousel-slides");
+        const slides = carousel.querySelectorAll(".carousel-slide");
+        const indicators = carousel.querySelectorAll(".indicator");
 
-    let currentSlide = 0;
-    const slideCount = slides.length;
+        let currentSlide = 0;
+        const slideCount = slides.length;
 
-    function showSlide(index) {
-        slidesContainer.style.transform = `translateX(-${index * 100}%)`;
-        slides[currentSlide].classList.remove("active");
-        indicators[currentSlide].classList.remove("active");
-        slides[index].classList.add("active");
-        indicators[index].classList.add("active");
-        currentSlide = index;
-    }
+        if (slideCount > 0) {
+            const showSlide = (index) => {
+                slidesContainer.style.transform = `translateX(-${index * 100}%)`;
 
-    function nextSlide() {
-        const nextIndex = (currentSlide + 1) % slideCount;
-        showSlide(nextIndex);
-    }
+                slides[currentSlide]?.classList.remove("active");
+                indicators[currentSlide]?.classList.remove("active");
 
-    indicators.forEach((indicator, index) => {
-        indicator.addEventListener("click", () => showSlide(index));
-    });
+                slides[index]?.classList.add("active");
+                indicators[index]?.classList.add("active");
 
-    setInterval(nextSlide, 30000);
-});
+                currentSlide = index;
+            };
 
-// Toggle Menu Function
-function toggleMenu() {
-    const navMenu = document.querySelector('.nav-menu');
-    const menuToggle = document.querySelector('.menu-toggle');
-    navMenu.classList.toggle('active');
+            const nextSlide = () => {
+                showSlide((currentSlide + 1) % slideCount);
+            };
 
-    menuToggle.classList.toggle('active');
-}
+            indicators.forEach((indicator, index) => {
+                indicator.addEventListener("click", () => showSlide(index));
+            });
 
-// Make Header Sticky
-window.addEventListener('scroll', () => {
-    const header = document.querySelector('header');
-    if (window.scrollY > 50) {
-        header.classList.add('sticky');
-    } else {
-        header.classList.remove('sticky');
-    }
-});
-
-function toggleFooterVisibility() {
-    let footer = document.getElementById('main-footer');
-    if (footer) {
-        if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
-            footer.classList.add('show');
-        } else {
-            footer.classList.remove('show');
+            setInterval(nextSlide, 30000);
         }
     }
+
+    // ===== CACHED ELEMENTS =====
+    const header = document.querySelector("header");
+    const footer = document.getElementById("main-footer");
+
+    const handleScroll = () => {
+        const scrolled = window.scrollY > 50;
+
+        if (header) {
+            header.classList.toggle("sticky", scrolled);
+        }
+
+        if (footer) {
+            const atBottom =
+                window.innerHeight + window.scrollY >= document.body.offsetHeight;
+            footer.classList.toggle("show", atBottom);
+        }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // initial run
+});
+
+// ===== MENU TOGGLE =====
+function toggleMenu() {
+    document.querySelector(".nav-menu")?.classList.toggle("active");
+    document.querySelector(".menu-toggle")?.classList.toggle("active");
 }
-
-window.addEventListener('scroll', toggleFooterVisibility);
-
-toggleFooterVisibility();
