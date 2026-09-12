@@ -1,154 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Blog page</title>
+    <title>Signal — ideas for curious people</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="https://github.com/adhir2099" />
-    <meta name="description" content="Pure Blog page - no libraries needed" />
+    <meta name="author" content="https://github.com/adhir2099">
+    <meta name="description" content="Signal is an independent journal for ideas, design, culture and the internet.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-    <header>
-        <div class="container">
-            
-            <div class="logo">
-                <img class="" src="https://www.latercera.com/resizer/0m3JT6JAmot5lzEHQ9eF7dXQO5c=/900x600/filters:focal(469x292:479x282)/cloudfront-us-east-1.images.arcpublishing.com/copesa/6O3E6FX56FCYFGW5NZFOKYGNY4.jpg" alt="Blog Logo 50x50">
-                <h1>Blog Page</h1>
-            </div>
-    
-            <button class="menu-toggle" onclick="toggleMenu()">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-    
-            <nav class="nav-menu">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Articles</a></li>
-                    <li><a href="#">Tutorials</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+<body>
+    <header class="site-header">
+        <div class="masthead shell">
+            <a class="wordmark" href="#top" aria-label="Signal home">signal<span>.</span></a>
+            <p class="edition">Independent ideas<br>Vol. 04 — 2026</p>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"
+                aria-label="Open navigation"><span></span><span></span></button>
+            <nav class="nav-menu" id="main-nav" aria-label="Main navigation"><a class="active" href="#top">Latest</a><a
+                    href="#culture">Culture</a><a href="#dispatches">Dispatches</a><a href="#about">About</a></nav>
+            <a class="subscribe-link" href="#newsletter">Subscribe <span aria-hidden="true">↗</span></a>
         </div>
     </header>
-
-    <main>
-
-        <section class="container">
-            <div class="carousel">
-                <div class="carousel-title">My Awesome Carousel</div>
-                <div class="carousel-slides">
-                    <div class="carousel-slide active">
-                        <img src="https://www.latercera.com/resizer/0m3JT6JAmot5lzEHQ9eF7dXQO5c=/900x600/filters:focal(469x292:479x282)/cloudfront-us-east-1.images.arcpublishing.com/copesa/6O3E6FX56FCYFGW5NZFOKYGNY4.jpg" alt="Slide 1">
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="https://www.latercera.com/resizer/0m3JT6JAmot5lzEHQ9eF7dXQO5c=/900x600/filters:focal(469x292:479x282)/cloudfront-us-east-1.images.arcpublishing.com/copesa/6O3E6FX56FCYFGW5NZFOKYGNY4.jpg" alt="Slide 2">
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="https://img2-levelup.buscafs.com/798495/798495.jpg" alt="Slide 3">
-                    </div>
+    <main id="top">
+        <section class="hero shell" aria-labelledby="hero-title">
+            <div class="eyebrow-row"><span>Editor’s selection</span><span>Sept. 11, 2026</span></div>
+            <div class="hero-grid">
+                <div class="hero-copy">
+                    <p class="kicker">The good friction</p>
+                    <h1 id="hero-title">The future feels better when we <em>make room</em> for it.</h1>
+                    <p class="dek">A field guide to building a more deliberate relationship with the tools, spaces and
+                        stories that shape our everyday lives.</p><a class="text-link" href="#culture">Read the feature
+                        <span aria-hidden="true">→</span></a>
                 </div>
-                <div class="carousel-indicators">
-                    <span class="indicator active" data-slide-to="0"></span>
-                    <span class="indicator" data-slide-to="1"></span>
-                    <span class="indicator" data-slide-to="2"></span>
+                <figure class="hero-image"><img src="https://img2-levelup.buscafs.com/798495/798495.jpg"
+                        alt="A warm, sunlit modern interior">
+                    <figcaption>Photography by Lena Ortiz</figcaption>
+                </figure>
+                <aside class="hero-note"><span class="note-number">01</span>
+                    <p>Small observations on life in a loud, fast, interesting world.</p><a href="#dispatches">Explore
+                        the archive <span aria-hidden="true">↘</span></a>
+                </aside>
+            </div>
+        </section>
+        <section class="ticker" aria-label="Topics">
+            <div class="ticker-track">
+                <span>Design</span><i></i><span>Technology</span><i></i><span>Living</span><i></i><span>Culture</span><i></i><span>Design</span><i></i><span>Technology</span><i></i><span>Living</span><i></i><span>Culture</span><i></i>
+            </div>
+        </section>
+        <section class="stories shell" id="culture" aria-labelledby="latest-title">
+            <div class="section-heading">
+                <p class="kicker">On the desk</p>
+                <h2 id="latest-title">Latest stories</h2><a href="#dispatches">View all <span
+                        aria-hidden="true">→</span></a>
+            </div>
+            <div class="story-grid">
+                <article class="story story-featured"><a class="story-image" href="#"
+                        aria-label="Read A city built for the five-minute pause"><img
+                            src="https://www.latercera.com/resizer/0m3JT6JAmot5lzEHQ9eF7dXQO5c=/900x600/filters:focal(469x292:479x282)/cloudfront-us-east-1.images.arcpublishing.com/copesa/6O3E6FX56FCYFGW5NZFOKYGNY4.jpg"
+                            alt="A person framed by deep blue architecture"></a>
+                    <div class="story-meta"><span>Places</span><time datetime="2026-09-08">8 min read</time></div>
+                    <h3><a href="#">A city built for the five-minute pause</a></h3>
+                    <p>What happens when public space invites us to linger, notice and belong?</p>
+                </article>
+                <article class="story">
+                    <div class="story-index">02</div>
+                    <div class="story-meta"><span>Work</span><time datetime="2026-09-05">6 min read</time></div>
+                    <h3><a href="#">The quiet art of making an unfinished thing</a></h3>
+                    <p>Perfection is a poor compass. A designer on learning to share the sketch, not just the result.
+                    </p><a class="text-link small" href="#">Read story <span aria-hidden="true">→</span></a>
+                </article>
+                <article class="story story-dark">
+                    <div class="story-index">03</div>
+                    <div class="story-meta"><span>Notebook</span><time datetime="2026-09-01">4 min read</time></div>
+                    <h3><a href="#">A pocket-sized manifesto for a less optimized life</a></h3>
+                    <p>Seven notes on attention, pleasure and leaving some space in the day.</p><a
+                        class="text-link small" href="#">Read story <span aria-hidden="true">→</span></a>
+                </article>
+            </div>
+        </section>
+        <section class="dispatch-section" id="dispatches">
+            <div class="shell dispatch-layout">
+                <div>
+                    <p class="kicker">From the margins</p>
+                    <h2>Notes worth<br><em>passing along.</em></h2>
                 </div>
-            </div>
-        </section>
-
-        <section class="container-content">
-            <div class="content-column">
-               <article class="article-preview">
-                    <img src="https://img2-levelup.buscafs.com/798495/798495.jpg" alt="Article Thumbnail">
-                    <div class="article-content">
-                        <h2>Latest Article Title</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero sit amet lectus sodales, vitae condimentum justo sollicitudin.</p>
-                        <a href="#" class="cta-button">Read More</a>
-                    </div>
-                </article>
-                <article class="article-preview">
-                    <img src="https://www.latercera.com/resizer/0m3JT6JAmot5lzEHQ9eF7dXQO5c=/900x600/filters:focal(469x292:479x282)/cloudfront-us-east-1.images.arcpublishing.com/copesa/6O3E6FX56FCYFGW5NZFOKYGNY4.jpg" alt="Article Thumbnail">
-                    <div class="article-content">
-                        <h2>Latest Article Title</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero sit amet lectus sodales, vitae condimentum justo sollicitudin.</p>
-                        <a href="#" class="cta-button">Read More</a>
-                    </div>
-                </article>
-                <article class="article-preview">
-                    <img src="https://scontent.fmex27-1.fna.fbcdn.net/v/t39.30808-6/466590252_1767922303972458_8684307672833367348_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=Quzfik6pzt8Q7kNvgGdXoaR&_nc_oc=Adlxfvl4anKBUY6DJ9yoNIjEClj4H9F5ab6d8Z6dIDyqTT6x0D_jir1hYuXVeA8He8Y&_nc_zt=23&_nc_ht=scontent.fmex27-1.fna&_nc_gid=3l9aR74tlO0TzwuOLdP2Kw&oh=00_AYFK4kpVAWkjg6rEWawhK-4LC2APPqVM8sfXzvGSMHH7BA&oe=67E2A2A2" alt="Article Thumbnail">
-                    <div class="article-content">
-                        <h2>Latest Article Title</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero sit amet lectus sodales, vitae condimentum justo sollicitudin.</p>
-                        <a href="#" class="cta-button">Read More</a>
-                    </div>
-                </article>
-            </div>
-            
-            <div class="sidebar-column">
-                <ul class="post-list">
-                    <li>
-                        <h3>Post Title 1</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero sit amet lectus sodales, vitae condimentum justo sollicitudin.</p>
-                        <a href="#" class="cta-button">Read More</a>
-                    </li>
-                    <li>
-                        <h3>Post Title 2</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero sit amet lectus sodales, vitae condimentum justo sollicitudin.</p>
-                        <a href="#" class="cta-button">Read More</a>
-                    </li>
-                    <li>
-                        <h3>Post Title 3</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero sit amet lectus sodales, vitae condimentum justo sollicitudin.</p>
-                        <a href="#" class="cta-button">Read More</a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        
-        <section class="container-nl">
-            <div class="contact-form">
-                <h2>Sign up to Newsletter</h2>
-                <form action="#" method="post">
-                    <div class="form-group">
-                        <label for="email">Your Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="terms">I agree to the terms and conditions</label>
-                        <input type="checkbox" id="terms" name="terms" required>
-                    </div>
-                    <button type="submit">Sign up</button>
-                </form>
-            </div>
-        </section>
-
-        <section class="about-author">
-            <h2>About Me</h2>
-            <div class="author-info">
-                <img src="https://www.latercera.com/resizer/0m3JT6JAmot5lzEHQ9eF7dXQO5c=/900x600/filters:focal(469x292:479x282)/cloudfront-us-east-1.images.arcpublishing.com/copesa/6O3E6FX56FCYFGW5NZFOKYGNY4.jpg" alt="Author Photo 150x150">
-                <p>Hi, I'm [Your Name], a passionate blogger sharing insights on [your niche]. Follow me for more!</p>
-                <div class="social-links">
-                    <a href="#"><img src="assets/svg/discord-icon.svg" alt=""></a>
-                    <a href="#"><img src="assets/svg/instagram-icon.svg" alt=""></a>
-                    <a href="#"><img src="assets/svg/joinmastodon-icon.svg" alt=""></a>
-                    <a href="#"><img src="assets/svg/x-ar21.svg" alt=""></a>
-                    <a href="#"><img src="assets/svg/youtube-icon.svg" alt=""></a>
+                <div class="dispatch-list">
+                    <article><span>01</span>
+                        <div>
+                            <p class="dispatch-type">Interview</p>
+                            <h3>Why the best conversations leave room for silence</h3>
+                        </div><a href="#" aria-label="Read interview">↗</a>
+                    </article>
+                    <article><span>02</span>
+                        <div>
+                            <p class="dispatch-type">Field note</p>
+                            <h3>On wandering without a destination</h3>
+                        </div><a href="#" aria-label="Read field note">↗</a>
+                    </article>
+                    <article><span>03</span>
+                        <div>
+                            <p class="dispatch-type">Objects</p>
+                            <h3>A short list of things that earned their place</h3>
+                        </div><a href="#" aria-label="Read objects story">↗</a>
+                    </article>
                 </div>
             </div>
         </section>
-
+        <section class="newsletter shell" id="newsletter" aria-labelledby="newsletter-title">
+            <p class="kicker">Every other Friday</p>
+            <div>
+                <h2 id="newsletter-title">Good things,<br>delivered <em>slowly.</em></h2>
+                <p>A small selection of ideas, links and observations for your inbox. No noise, ever.</p>
+            </div>
+            <form class="signup-form" action="#" method="post"><label class="sr-only" for="email">Email
+                    address</label><input type="email" id="email" name="email" placeholder="Your email address"
+                    autocomplete="email" required><button type="submit">Join Signal <span
+                        aria-hidden="true">→</span></button>
+                <p class="form-message" aria-live="polite"></p>
+            </form>
+        </section>
+        <section class="about shell" id="about">
+            <p class="kicker">About Signal</p>
+            <p class="about-copy">Signal is an independent journal for people who remain <em>curious about the
+                    world</em> and the many ways we move through it.</p>
+            <div class="social-links" aria-label="Social media links"><a href="#" aria-label="Discord"><img
+                        src="assets/svg/discord-icon.svg" alt=""></a><a href="#" aria-label="Instagram"><img
+                        src="assets/svg/instagram-icon.svg" alt=""></a><a href="#" aria-label="Mastodon"><img
+                        src="assets/svg/joinmastodon-icon.svg" alt=""></a><a href="#" aria-label="X"><img
+                        src="assets/svg/x-ar21.svg" alt=""></a><a href="#" aria-label="YouTube"><img
+                        src="assets/svg/youtube-icon.svg" alt=""></a></div>
+        </section>
     </main>
+    <footer class="site-footer">
 
-    <footer id="main-footer">
-        <div class="container">
-            <p>&copy; 2026 Blog page. All rights reserved.</p>
+        <div class="shell"><a class="wordmark" href="#top">signal<span>.</span></a>
+            <p>© 2026 Signal Journal</p><a href="#top">Back to top <span aria-hidden="true">↑</span></a>
         </div>
     </footer>
-
     <script src="custom.js"></script>
 </body>
+
 </html>

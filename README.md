@@ -1,7 +1,7 @@
 <h1 align="center">  Blog page 👋</h1>
 
 # Blog page
-A responsive blog page with pure CSS and vanilla JS, no bootstrap nor tailwind needed.
+A responsive blog landing page with pure CSS and vanilla JS, no bootstrap nor tailwind needed.
 
 ## Demo URL
 <p align="left">
